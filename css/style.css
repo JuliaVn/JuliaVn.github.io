@@ -1139,6 +1139,7 @@ img {
       height: 1px;
       width: 100%;
       bottom: 0;
+      left: 0;
       background-color: #62d1ba;
       -webkit-transition: all .3s ease;
       transition: all .3s ease; }
