@@ -86,7 +86,7 @@
               </div>
               <div class="goods__wrap-price">
                 <strong class="goods__price">1200 руб.</strong>
-                <a class="goods__basket" href="">
+                <a class="goods__basket addToBasket" href="">
                   <img class="goods__basket-img" src="img/icon-cart.svg" alt="Добавить в корзину">
                 </a>
               </div>
@@ -107,7 +107,7 @@
               </div>
               <div class="goods__wrap-price">
                 <strong class="goods__price">690 руб.</strong>
-                <a class="goods__basket" href="">
+                <a class="goods__basket addToBasket" href="">
                   <img class="goods__basket-img" src="img/icon-cart.svg" alt="Добавить в корзину">
                 </a>
               </div>
@@ -128,7 +128,7 @@
               </div>
               <div class="goods__wrap-price">
                 <strong class="goods__price">1500 руб.</strong>
-                <a class="goods__basket" href="">
+                <a class="goods__basket addToBasket" href="">
                   <img class="goods__basket-img" src="img/icon-cart.svg" alt="Добавить в корзину">
                 </a>
               </div>
@@ -215,6 +215,33 @@
         </div>
       </div>
     </footer>
+    <div class="popup__wrapper">
+      <section class="popup">
+        <div class="popup__inner">
+          <h2 class="popup__title">Добавить в корзину</h2>
+          <p class="popup__text">Выберите размер:</p>
+          <form action="https://echo.htmlacademy.ru" method="GET">
+            <ul class="popup__list">
+              <li class="popup__item">
+                <input class="visually-hidden popup__input" type="checkbox" id="checkbox-small" name="size" value="small" checked>
+                <label class="popup__size" for="checkbox-small">s</label>
+              </li>
+              <li class="popup__item">
+                <input class="visually-hidden popup__input" type="checkbox" id="checkbox-medium" name="size" value="medium">
+                <label class="popup__size" for="checkbox-medium">m</label>
+              </li>
+              <li class="popup__item">
+                <input class="visually-hidden popup__input" type="checkbox" id="checkbox-large" name="size" value="large">
+                <label class="popup__size" for="checkbox-large">l</label>
+              </li>
+            </ul>
+            <button class="button popup__button" type="submit">Добавить</button>
+          </form>
+        </div>
+      </section>
+      <div class="popup__overlay"></div>
+    </div>
     <script src="js/script.js"></script>
+    <script src="js/script-popup.js"></script>
   </body>
 </html>
